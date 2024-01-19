@@ -8,6 +8,263 @@
     <title>Wedad Amer</title>
 </head>
 <body>
-    Hello.
+
+
+    <header>
+        
+        <nav class="mobile hiden"></nav>
+        
+        
+        <button aria-label="toggle night mode">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+              </svg>
+        </button>
+
+    </header>
+    
+    <main>
+        <aside class="navigation-container" role="navigation" aria-label="Page Sections">
+            <ul>
+                <li class="active"><a href="#welcome-section">Welcome</a></li>
+                <li class="inactive"><a href="#about-section">About</a></li>
+                <li class="inactive"><a href="#project-section">Web Projects</a></li>
+                <li class="inactive"><a href="#creative-section">Creative Works</a></li>
+                <li class="inactive"><a href="#technology-section">Technology</a></li>
+                <li class="inactive"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </aside>
+        <article>
+            <section class="welcome-section sec-container" id="welcome-section">
+                <h1>Hey</h1>
+                <p>
+                    Welcome to my Website! I'm Wedad, A Full-Stack Developer <br> Based in <Span>Melbourne, Victoria</Span> <br>
+                    I like to create things: Website, Art, Fun Apps and anything Interesting!
+                </p>
+            </section>
+
+            <section class="about-section sec-container" id="about-section">
+                <h1>About</h1>
+                <p>
+                    A little more about Me <br>
+                    I am a graduate from <span>University of Melbourne</span> <br>
+                    with a <span>Masters</span> in <span>Information Technology</span>
+                    and <span>Bachelors in Design</span> <br>
+                    [And of course both degrees were heavily focused on web development] <br>
+
+                    As you can imagine, I like both Tech and Design! <br>
+                    and I just think Web Dev is the best intersection of the two (So here I am)
+                    
+                </p>
+
+            </section>
+
+            <article class="project-section sec-container" id="project-section">
+                <h1>Projects</h1>
+
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="small" />
+                            <source media="(min-width: 800px)" srcset="large" />
+                            <img src="large" alt="Rippledex Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="github" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                            <a href="live" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="project right">
+                        <h2>RippleDex</h2>
+                        <p>Project Made Under Capstone Subject ..... Info</p>
+                        <h3>React - TypeScript - Firebase</h3>
+                    </div>
+                </section>
+
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="small" />
+                            <source media="(min-width: 800px)" srcset="large" />
+                            <img src="large" alt="Rippledex Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="github" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                            <a href="live" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="project right">
+                        <h2>RippleDex</h2>
+                        <p>Project Made Under Capstone Subject ..... Info</p>
+                        <h3>React - TypeScript - Firebase</h3>
+                    </div>
+                </section>
+
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="small" />
+                            <source media="(min-width: 800px)" srcset="large" />
+                            <img src="large" alt="Rippledex Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="github" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                            <a href="live" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="project right">
+                        <h2>RippleDex</h2>
+                        <p>Project Made Under Capstone Subject ..... Info</p>
+                        <h3>React - TypeScript - Firebase</h3>
+                    </div>
+                </section>
+
+            </article>
+
+            <article class="creative-section sec-container" id="creative-section">
+                <h1>Creative Works</h1>
+                <section class="creative-container">
+                    <h2>Illustration Works</h2>
+                    <button aria-label="Open Image Gallery Dialog"> 
+                        <img src="WIllsJ" alt="Image board of Creative Works" srcset="">
+                    </button>
+                    <dialog class="image-board" id="Design Works" open>
+                        Image Board of Cool Stuff
+                    </dialog>
+                </section>
+
+                <section class="creative-container">
+                    <h2>Design Works</h2>
+                    <button aria-label="Open Image Gallery Dialog"> 
+                        <img src="WIllsJ" alt="Image board of Creative Works" srcset="">
+                    </button>
+                    <dialog class="image-board" id="design-work" open>
+                        Image Board of Cool Stuff
+                    </dialog>
+
+                </section>
+
+            </article>
+
+            <section class="technology-section sec-container" id="technology-section">
+                <h1>Technologies</h1>
+                <div>
+                    <h2>languages</h2>
+                    <ul>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>FrontEnd</h2>
+                    <ul>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Backend</h2>
+                    <ul>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                        <li>Icon</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Tools</h2>
+                    <ul>
+                        <li>Jira</li>
+                        <li>Trello</li>
+                        <li>Github</li>
+                        <li>VSCODE</li>
+                        <li>Anaconda</li>
+                        <li>Linux</li>
+                        <li>JupyterLab</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="contact-section sec-container" id="contact-section">
+                <h1>Contact</h1>
+                <p>You made it to the end! thanks again for checking it out <br>
+                Contact me with any of the socials below, I'm always happy to chat
+                </p>
+                <div>
+                    <ul>
+                        <li>github</li>
+                        <li>linkdin</li>
+                        <li>email</li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+        <footer>
+            <button aria-label="back to top"><a href="#welcome-section">^</a></button>
+        </footer>
+    </main>
+
+
+
+
+
+    <!-- -Intro
+    -about
+        -Experience
+        -Interests
+    -Projects
+     - Rippledex
+     -
+     - [wip] 
+     - [wip]
+    -Contact
+
+
+    Hey!
+
+    Thanks for checking out my site!
+    Little about me, I'm a Full-stack web developer
+    with interests in making fun, creative and interesting sites! -->
+
+
 </body>
 </html>
