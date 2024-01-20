@@ -7,18 +7,19 @@
     <script src="index.js" defer></script>
     <title>Wedad Amer</title>
 </head>
-<body>
-
-
+<body class="light-mode">
     <header>
         
         <nav class="mobile hiden"></nav>
         
         
-        <button aria-label="toggle night mode">
+        <button aria-label="toggle night mode" class="theme">
+            
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
                 <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
               </svg>
+            <br>
+            <p>Night Mode</p>
         </button>
 
     </header>
@@ -26,20 +27,20 @@
     <main>
         <aside class="navigation-container" role="navigation" aria-label="Page Sections">
             <ul>
-                <li class="active"><a href="#welcome-section">Welcome</a></li>
-                <li class="inactive"><a href="#about-section">About</a></li>
-                <li class="inactive"><a href="#project-section">Web Projects</a></li>
-                <li class="inactive"><a href="#creative-section">Creative Works</a></li>
-                <li class="inactive"><a href="#technology-section">Technology</a></li>
-                <li class="inactive"><a href="#contact-section">Contact</a></li>
+                <li class="active"><a href="#welcome-section">Welcome</a><hr></li>
+                <li class="visible"><a href="#about-section">About</a><hr></li>
+                <li class="inactive"><a href="#project-section">Web Projects</a><hr></li>
+                <li class="inactive"><a href="#creative-section">Creative Works</a><hr></li>
+                <li class="inactive"><a href="#technology-section">Technology</a><hr></li>
+                <li class="inactive"><a href="#contact-section">Contact</a><hr></li>
             </ul>
         </aside>
         <article>
             <section class="welcome-section sec-container" id="welcome-section">
-                <h1>Hey</h1>
+                <h1>Hey!</h1>
                 <p>
-                    Welcome to my Website! I'm Wedad, A Full-Stack Developer <br> Based in <Span>Melbourne, Victoria</Span> <br>
-                    I like to create things: Website, Art, Fun Apps and anything Interesting!
+                    Welcome to my Website! I'm Wedad, A Full-Stack Developer <br> Based in <Span>Melbourne, Victoria</Span> <br> <br>
+                    I like to create things; including but not limited to: <br> Websites, Designs, Illustrations, Fun Apps <br> and anything Interesting!
                 </p>
             </section>
 
@@ -50,8 +51,7 @@
                     I am a graduate from <span>University of Melbourne</span> <br>
                     with a <span>Masters</span> in <span>Information Technology</span>
                     and <span>Bachelors in Design</span> <br>
-                    [And of course both degrees were heavily focused on web development] <br>
-
+                    [And of course both degrees were heavily focused on web development] <br><br>
                     As you can imagine, I like both Tech and Design! <br>
                     and I just think Web Dev is the best intersection of the two (So here I am)
                     
@@ -158,7 +158,7 @@
                     <button aria-label="Open Image Gallery Dialog"> 
                         <img src="WIllsJ" alt="Image board of Creative Works" srcset="">
                     </button>
-                    <dialog class="image-board" id="Design Works" open>
+                    <dialog class="image-board" id="Design Works">
                         Image Board of Cool Stuff
                     </dialog>
                 </section>
@@ -168,7 +168,7 @@
                     <button aria-label="Open Image Gallery Dialog"> 
                         <img src="WIllsJ" alt="Image board of Creative Works" srcset="">
                     </button>
-                    <dialog class="image-board" id="design-work" open>
+                    <dialog class="image-board" id="design-work">
                         Image Board of Cool Stuff
                     </dialog>
 
@@ -238,10 +238,11 @@
             </section>
 
         </article>
-        <footer>
-            <button aria-label="back to top"><a href="#welcome-section">^</a></button>
-        </footer>
     </main>
+
+    <footer>
+        <button aria-label="back to top"><a href="#welcome-section">^</a></button>
+    </footer>
 
 
 
