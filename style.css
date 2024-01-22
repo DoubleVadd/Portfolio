@@ -8,12 +8,16 @@
 }
 
 :root.dark{
-    --bg: #2b2422;
+    --bg: #0f0e0e;
     --fade: #403d39;
     --accent:#eb5e28;
     --medium: #ccc5b9;
     --dark: #fffcf2;
     font-family: monospace;
+}
+
+.skill-container.dark ul li img{
+    filter: invert(100);
 }
 
 
@@ -61,9 +65,9 @@ header button:hover{
 }
 
 main{
+    color: var(--dark);
     grid-area: main;
     padding: 5rem;
-    overflow-y: auto;
 }
 
 
@@ -87,6 +91,213 @@ main{
 .sec-container span{
     color: var(--accent);
 }
+
+
+/* Project Container section */
+
+.sec-container .project-container{
+    display: flex;
+    gap: 5rem;
+    /* background-color: red; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.project-section hr{
+    border: 2px solid var(--fade);
+    /* border-style: dotted; */
+}
+
+.project-container .project-left{
+    /* background-color: purple; */
+    text-align: center;
+    position: relative;
+}
+
+.project-left img{
+    height: 17rem;
+    aspect-ratio: 1.5;
+    /* border-radius: 20px; */
+    object-fit:cover;
+    outline: 4px solid var(--dark);
+    margin-bottom: 1rem;
+}
+
+.project-left .project-icons{
+    position: absolute;
+    /* bottom: 1.25rem; */
+    top: 13rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    background-color: var(--bg);
+    height: 4rem;
+    padding: 1.3rem;
+    outline: var(--accent) 4px solid;
+    border-radius: 0px 0px;
+}
+
+.project-icons a{
+    text-decoration: none;
+    color: var(--dark);
+    transition: color 0.2s;
+}
+
+.project-icons a:hover{
+    color: var(--accent);
+}
+
+.project-icons svg{
+    transform: scale(2);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-right h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+.project-right p{
+    font-size: 1.7rem;
+}
+
+.project-right h3::before{
+    content: 'Built with: ';
+    color: var(--dark);
+}
+
+.project-right h3{
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-top: auto;
+}
+
+/* Technology section */
+
+
+.technology-section hr{
+    border: 2px solid var(--fade);
+}
+
+.skill-container h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 2rem 0;
+
+}
+
+.skill-container ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    margin: 2rem auto;
+}
+
+.skill-container li{
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    /* background-color: var(--accent); */
+}
+
+.skill-container li img{
+    height: 4rem;
+    margin: 1rem;
+    fill: red;
+}
+
+.skill-container li p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    display: none;
+}
+
+.skill-container li:hover p{
+    display:contents
+}
+
+
+
+
+
+
+/* Creative showcase section */
+
+.creative-section{
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas: 'head head' 'desc desc' 'illust design';
+}
+
+.creative-section h1{
+    grid-area: head;
+}
+.creative-section p{
+    grid-area: desc;
+    margin-bottom: 1rem;
+}
+
+.creative-section h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+    margin-bottom: auto;
+}
+
+.creative-section .creative-container{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    
+}
+
+.creative-section button{
+    outline: none;
+    outline: var(--dark) 4px solid;
+    border: none;
+    /* align-self: center; */
+    margin: 3rem;
+    height: 30rem;
+    width:  80%;
+    border-radius: 10px;
+    /* background-color: #eb5e28; */
+}
+
+.creative-section button:hover{
+    cursor: pointer;
+    background-color: var(--accent);
+    
+}
+
+button#illust{
+    background-image: url(./Images/placeholder.png);
+}
+
+button#illust:hover, button#design:hover{
+   background-image: none;
+}
+
+button#design{
+    background-image: url(./Images/placeholder.png);
+}
+
+
 
 
 
