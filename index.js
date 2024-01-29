@@ -22,7 +22,10 @@ theme.addEventListener('click', () => {
     
     theme.innerHTML = themeSVG[initialTheme]
     root.className = initialTheme === 'light' ? 'light' : 'dark'
+    // list of section with svg img icons
     document.querySelector('.technology-section').classList.toggle('dark')
+    document.querySelector('.social-container').classList.toggle('dark')
+   
     
 
 })

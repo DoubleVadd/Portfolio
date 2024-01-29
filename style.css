@@ -28,6 +28,9 @@
     filter: invert(100);
 }
 
+.social-container.dark ul li img{
+    filter: invert(100);
+}
 
 
 html {
@@ -452,7 +455,17 @@ aside{
 
 footer{
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    
 }
+
+footer p{
+    color: var(--dark);
+
+}
+
+
 
 
 
