@@ -85,6 +85,16 @@ main{
 }
 
 
+.anchor-padding{
+    margin-top: -4rem;
+    padding-top: 4rem;
+}
+
+.anchor-padding:first-child{
+    margin-top: -2.5rem;
+    padding-top: 2.5rem;
+}
+
 .sec-container:first-child{
     margin-top: 1.5rem;
 }
@@ -429,18 +439,21 @@ aside{
 }
 
 .navigation-container ul li.active hr{
+    transition: width 1s;
     border: 3px solid var(--accent);
     width: clamp(1rem, 20vw, 20vw);
     
 }
 
 .navigation-container ul li.visible hr{
+    transition: width 1s;
     border: 3px solid var(--medium);
     width: clamp(1rem, 10vw, 20vw);
 }
 
 
 .navigation-container ul li.inactive hr{
+    transition: width 1s;
     border: 3px solid var(--fade);
     width: clamp(1rem, 5vw, 10vw);
     

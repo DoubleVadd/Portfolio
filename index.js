@@ -25,11 +25,40 @@ theme.addEventListener('click', () => {
     // list of section with svg img icons
     document.querySelector('.technology-section').classList.toggle('dark')
     document.querySelector('.social-container').classList.toggle('dark')
-   
-    
-
 })
 
+
+//  Scroll Navbar events
+let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: [0,0.5,1],
+  };
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry) => {
+        const currentSelection = document.querySelector('#navi-'+entry.target.id)
+        // console.log(currentSelection)
+        if(entry.intersectionRatio === 0){
+            currentSelection.className = 'inactive'
+        } else if (entry.intersectionRatio > 0 && entry.intersectionRatio <0.75){
+            currentSelection.className = 'visible'
+        }else{
+            currentSelection.className = 'active'
+        }
+        // console.log(entry.intersectionRatio)
+       
+    })
+}, options)
+
+
+const navEntry = document.querySelectorAll('.navigation-container ul li')
+navEntry.forEach(e => {
+    let locationID = e.firstChild.href.split('/').pop()
+    let currentLocation = document.querySelector(locationID)
+    observer.observe(currentLocation)
+
+})
 
 
 
