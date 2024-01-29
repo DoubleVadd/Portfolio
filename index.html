@@ -3,11 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
     <title>Wedad Amer</title>
 </head>
-<body>
-    Hello.
+<body class="light-mode">
+    <header>
+        
+        <div class="mobile-bg"></div>
+        
+        
+        <button aria-label="toggle night mode" class="theme">
+            
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+              </svg>
+            <br>
+            <p>Night Mode</p>
+        </button>
+
+    </header>
+    
+    <main>
+        <aside class="navigation-container" role="navigation" aria-label="Page Sections">
+            <ul class="navigation-mobile">
+                <li class="active" id="navi-welcome-section"><a href="#welcome-section" id="nav-welcome">Welcome</a><hr></li>
+                <li class="visible" id="navi-about-section"><a href="#about-section" id="nav-about">About</a><hr></li>
+                <li class="inactive" id="navi-project-section"><a href="#project-section" id="nav-project"><span class="mobile-hidden">Web</span> Projects</a><hr></li>
+                <li class="inactive" id="navi-technology-section"><a href="#technology-section" id="nav-technology">Technology</a><hr></li>
+                <li class="inactive" id="navi-creative-section"><a href="#creative-section" id="nav-creative">Creative <span class="mobile-hidden">Works</span></a><hr></li>
+                <li class="inactive" id="navi-contact-section"><a href="#contact-section" id="nav-contact">Contact</a><hr></li>
+            </ul>
+        </aside>
+        <article>
+            <section class="welcome-section sec-container anchor-padding" id="welcome-section">
+                <h1>Hey!</h1>
+                <p>
+                    Welcome to my Website! I'm Wedad, A Full-Stack Developer <br> Based in <Span>Melbourne, Victoria</Span> <br> <br>
+                    I like to create things; including but not limited to: <br> Websites, Designs, Illustrations, Fun Apps <br> and anything Interesting!
+                </p>
+            </section>
+
+            <section class="about-section sec-container anchor-padding" id="about-section">
+                <h1>About</h1>
+                <p>
+                    A little more about Me <br>
+                    I am a graduate from <span>University of Melbourne</span> <br>
+                    with a <span>Masters</span> in <span>Information Technology</span>
+                    and <span>Bachelors in Design</span> <br>
+                    [And of course both degrees were heavily focused on web development] <br><br>
+                    As you can imagine, I like both Tech and Design! <br>
+                    and I just think Web Dev is the best intersection of the two (So here I am)
+                    
+                </p>
+
+            </section>
+
+            <article class="project-section sec-container anchor-padding" id="project-section">
+                <h1>Projects</h1>
+
+                <hr>
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="./Images/rippledex.PNG" />
+                            <source media="(min-width: 800px)" srcset="./Images/rippledex.PNG" />
+                            <img src="./Images/rippledex.PNG" alt="Rippledex Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="https://github.com/Wvww-git/RippleDEX" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                Repo
+                            </a>
+                            <a href="https://ripple-dex.web.app/" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                                  Deployment
+                            </a>
+                        </div>         
+                    </div>
+                    <hr>
+                    <div class="project-right">
+                        <h2>RippleDex</h2>
+                        <p>RippleDEX is an online Customer Relationship Manager (CRM) built with functionality and user experience in mind. Manage multiple workspaces, deals, companies, contacts, tasks, and meetings all in one place.</p>
+                        <h3>React - Javascript - Firebase</h3>
+                    </div>
+                </section>
+
+                <hr>
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="./Images/battleship.PNG" />
+                            <source media="(min-width: 800px)" srcset="./Images/battleship.PNG" />
+                            <img src="./Images/rippledex.PNG" alt="battleship Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="https://github.com/DoubleVadd/BattleShip-JS" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                Repo
+                            </a>
+                            <a href="https://doublevadd.github.io/BattleShip-JS/" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                                  Deployment
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="project-right">
+                        <h2>BattleShip JS</h2>
+                        <p>A simple battleship game developed with vanilla JS HTML and CSS <br> Game is currently designed to be played on Desktop against a simple AI agent <br> </p>
+                        <h3>Javascript - Html - CSS</h3>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="project-container">
+                    <div class="project-left">
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="./Images/weather.png" />
+                            <source media="(min-width: 800px)" srcset="./Images/weather.png" />
+                            <img src="./Images/weather.PNG" alt="weather Thumbnail" />
+                        </picture>
+                        <div class="project-icons">
+                            <a href="https://doublevadd.github.io/WeatherApp/" >
+                                <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                Repo
+                            </a>
+                            <a href="https://doublevadd.github.io/WeatherApp/" >
+                                <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                                  Deployment
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="project-right">
+                        <h2>Simple WeatherApp</h2>
+                        <p>A simple weather app with search functionality utilising the Weather API</p>
+                        <h3>JavaScript - Html - Css</h3>
+                    </div>
+                </section>
+                <hr>
+
+            </article>
+
+            
+
+            <section class="technology-section sec-container anchor-padding" id="technology-section">
+                <h1>Technologies</h1>
+                <p>I always enjoy learning <span>new</span> things, and rather flexible when it comes to workflow. <br> However, I do like to keep things <span>simple</span> when possible and try not to over complicate. <br><br> These are some of Technologies I have used before:</p> 
+                <br><br>
+                <div class="skill-container">
+                    <h2>languages</h2>
+                    <ul>
+                        <li><img src="./icons/python-127-svgrepo-com.svg" alt="Python icon"><p> Python  </p></li>
+                        <li><img src="./icons/javascript-155-svgrepo-com.svg" alt="Javascript icon"><p> JavaScript  </p></li>
+                        <li><img src="./icons/typescript-svgrepo-com.svg"  alt="TypeScript icon"><p> TypeScript  </p></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="skill-container">
+                    <h2>FrontEnd</h2>
+                    <ul>
+                        <li><img src="./icons/react-16-svgrepo-com.svg" alt="React icon"><p> React  </p></li>
+                        <li><img src="./icons/gatsby-fill-svgrepo-com.svg" alt="gatsby icon"><p> Gatsby  </p></li>
+                        <li><img src="./icons/html-124-svgrepo-com.svg" alt="html5 icon"><p> HTML  </p></li>
+                        <li><img src="./icons/css3-02-svgrepo-com.svg" alt="css icon"><p> CSS  </p></li>
+                        <li><img src="./icons/sass-svgrepo-com.svg" alt="sass icon"><p> SASS  </p></li>
+                        <li><img src="./icons/chakraui-svgrepo-com.svg" alt="chakraUI icon"><p> ChakraUI  </p></li>
+                        <li><img src="./icons/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap icon"><p> Bootstrap  </p></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="skill-container">
+                    <h2>Backend</h2>
+                    <ul>
+                        <li><img src="./icons/nodejs02-svgrepo-com.svg" alt="NodeJS icon"><p> NodeJS  </p></li>
+                        <li><img src="./icons/firebase-svgrepo-com.svg" alt="Firebase icon"><p> Firebase  </p></li>
+                        <li><img src="./icons/mongodb-svgrepo-com.svg" alt="MongoDB icon"><p> MongoDB  </p></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="skill-container">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li><img src="./icons/photoshop-svgrepo-com.svg" alt="Photoshop icon"><p> Photoshop  </p></li>
+                        <li><img src="./icons/adobe-xd-svgrepo-com.svg" alt="Adobe XD icon"><p> Adobe XD </p> </li>
+                        <li><img src="./icons/figma-svgrepo-com.svg" alt="Figma icon"><p> Figma  </p></li>
+                        <li><img src="./icons/jira-svgrepo-com.svg" alt="JIRA icon"><p> Jira  </p></li>
+                        <li><img src="./icons/trello-svgrepo-com.svg" alt="Trello icon"><p> Trello  </p></li>
+                        <li><img src="./icons/github-142-svgrepo-com.svg" alt=" Github icon"><p> Github  </p></li>
+                        <li><img src="./icons/jupyter-svgrepo-com.svg" alt="JupyterLab icon"><p> JupyterLab  </p></li>
+                        <li><img src="./icons/vscode-fill-svgrepo-com.svg" alt="VSCode icon"><p> VSCODE  </p></li>
+                        <li><img src="./icons/anaconda-svgrepo-com.svg" alt="Anaconda icon"><p> Anaconda  </p></li>
+                    </ul>
+                </div>
+                <hr>
+
+            </section>
+
+            <article class="creative-section sec-container anchor-padding" id="creative-section">
+                <h1>Creative Works</h1>
+                <p>Beyond Coding, I really enjoy <span>Illustrating</span> and <span>Designing</span> in my spare time. <br> take a peek at some of my <span>works!</span></p>
+                
+                <section class="creative-container">
+                    <h2>Illustration Works</h2>
+                    <button id="illust" aria-label="Open Image Gallery Dialog"> 
+                        <p>Illustration Gallery</p>
+                    </button>
+                    <dialog class="image-board" id="illust-Works">
+                        <hr>
+                        <p><br><br>Some of my illustration works, I like creating <span>fictional worlds!</span></p>
+                        <hr>
+                        <div class="image-container">
+                            <img src="Images/Illust/cameraaa.jpg" alt="Art of Fictional Camera W-Nomad">
+                            <hr>
+                            <img src="Images/Illust/camera.jpg" alt="Art of Red haired Boy taking photos with colourful birds">
+                            <hr>
+                            <img src="Images/Illust/des1.jpg" alt="Art of Sand city and a yellow serpent">
+                            <hr>
+                            <img src="Images/Illust/des3.jpg" alt="Art of chained mechanical orb levitating in a  a desert">
+                            <hr>
+                            <img src="Images/Illust/land of paper.jpg" alt="Art of Underground City made of paper">
+                            <hr>
+                            <img src="Images/Illust/sky wyrm.jpg" alt="Art of fictional Wyrm in a giant forest">
+                            <hr>
+                            <img src="Images/Illust/bluelillyvalley.jpg" alt="Art of fictional Ravine covered in Blue Grass">
+                            <hr>
+                        </div>
+                        <button class="close close-illust" id="illust-close">Close</button>
+                    </dialog>
+                </section>
+                <section class="creative-container">
+                    <h2>Design Works</h2>
+                    <button id="design" aria-label="Open Design Gallery Dialog"> 
+                        <p>Design Gallery</p>
+                    </button>
+                    <dialog class="image-board" id="design-work">
+                        <hr>
+                        <p><br><br>Some of my Design works, some fictional <span>brands</span> and <span>Rebrands</span></p>
+                        <hr>
+                        <div class="image-container">
+                            <img src="Images/design/atomy.jpg" alt="promotion for Social media concept Atomy 1">
+                            <hr>
+                            <img src="Images/design/atomy2.jpg" alt="promotion for Social media concept Atomy 2">
+                            <hr>
+                            <img src="Images/design/atomy3.jpg" alt="promotion for Social media concept Atomy 3">
+                            <hr>
+                            <img src="Images/design/logo.jpg" alt="Pattern based logo works">
+                            <hr>
+                            <img src="Images/design/adidasmock.jpg" alt="Fake Adidas sub-brand adidas Tri">
+                            <hr>
+                            <img src="Images/design/stationmock.jpg" alt="Photo Collage of Melbourne to create fictional worlds">
+                            <hr>
+                
+                        </div>
+                        <button class="close close-illust" id="design-close">Close</button>
+                    </dialog>
+                </section>
+
+            </article>
+
+            <section class="contact-section sec-container anchor-padding" id="contact-section">
+                <h1>Contact</h1>
+                <p>You made it to the end! <span>thanks</span> again for checking it out! <br>
+                Contact me with any of the socials below, I'm always happy to chat,<br> be it for <span>work</span>, or anything <span>else</span>!
+                <br><br>
+                </p>
+                <div class="skill-container social-container">
+                    <ul>
+                        <li><a href = "https://github.com/DoubleVadd"><img src="./icons/github-142-svgrepo-com.svg" alt="Github icon"></a><p>Github</p></li>
+                        <li><a href = "https://www.linkedin.com/in/wedad-amer/"><img src="./icons/linkedin-svgrepo-com.svg" alt="Linkedin icon"></a><p>LinkedIn</p></li>
+                        <li><a href = "mailto: wemerdan@gmail.com"><img src="./icons/email-svgrepo-com.svg" alt="Email icon"></a><p>Email</p></li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Version 1 | 2024 Feb</p>
+    </footer>
+
+
+
+
 </body>
 </html>
