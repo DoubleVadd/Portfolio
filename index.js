@@ -54,9 +54,11 @@ let observer = new IntersectionObserver((entries)=>{
 
 const navEntry = document.querySelectorAll('.navigation-container ul li')
 navEntry.forEach(e => {
-    let locationID = e.firstChild.href.split('/').pop()
-    let currentLocation = document.querySelector(locationID)
-    observer.observe(currentLocation)
+    let locationID = e.firstChild.id.split('-').pop()
+    let currentLocation = document.querySelector('#'+locationID + '-section')
+    if(currentLocation){
+        observer.observe(currentLocation)
+    }
 
 })
 

@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
     <title>Wedad Amer</title>
 </head>
 <body class="light-mode">
     <header>
         
-        <nav class="mobile hiden"></nav>
+        <div class="mobile-bg"></div>
         
         
         <button aria-label="toggle night mode" class="theme">
@@ -26,13 +27,13 @@
     
     <main>
         <aside class="navigation-container" role="navigation" aria-label="Page Sections">
-            <ul>
-                <li class="active" id="navi-welcome-section"><a href="#welcome-section">Welcome</a><hr></li>
-                <li class="visible" id="navi-about-section"><a href="#about-section">About</a><hr></li>
-                <li class="inactive" id="navi-project-section"><a href="#project-section">Web Projects</a><hr></li>
-                <li class="inactive" id="navi-technology-section"><a href="#technology-section">Technology</a><hr></li>
-                <li class="inactive" id="navi-creative-section"><a href="#creative-section">Creative Works</a><hr></li>
-                <li class="inactive" id="navi-contact-section"><a href="#contact-section">Contact</a><hr></li>
+            <ul class="navigation-mobile">
+                <li class="active" id="navi-welcome-section"><a href="#welcome-section" id="nav-welcome">Welcome</a><hr></li>
+                <li class="visible" id="navi-about-section"><a href="#about-section" id="nav-about">About</a><hr></li>
+                <li class="inactive" id="navi-project-section"><a href="#project-section" id="nav-project"><span class="mobile-hidden">Web</span> Projects</a><hr></li>
+                <li class="inactive" id="navi-technology-section"><a href="#technology-section" id="nav-technology">Technology</a><hr></li>
+                <li class="inactive" id="navi-creative-section"><a href="#creative-section" id="nav-creative">Creative <span class="mobile-hidden">Works</span></a><hr></li>
+                <li class="inactive" id="navi-contact-section"><a href="#contact-section" id="nav-contact">Contact</a><hr></li>
             </ul>
         </aside>
         <article>
@@ -66,18 +67,18 @@
                 <section class="project-container">
                     <div class="project-left">
                         <picture>
-                            <source media="(max-width: 799px)" srcset="./Images/placeholder.png" />
-                            <source media="(min-width: 800px)" srcset="./Images/placeholder.png" />
-                            <img src="./Images/placeholder.png" alt="Rippledex Thumbnail" />
+                            <source media="(max-width: 799px)" srcset="./Images/rippledex.PNG" />
+                            <source media="(min-width: 800px)" srcset="./Images/rippledex.PNG" />
+                            <img src="./Images/rippledex.PNG" alt="Rippledex Thumbnail" />
                         </picture>
                         <div class="project-icons">
-                            <a href="github" >
+                            <a href="https://github.com/Wvww-git/RippleDEX" >
                                 <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                                     <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
                                 Repo
                             </a>
-                            <a href="live" >
+                            <a href="https://ripple-dex.web.app/" >
                                 <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                     <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
@@ -90,7 +91,7 @@
                     <div class="project-right">
                         <h2>RippleDex</h2>
                         <p>RippleDEX is an online Customer Relationship Manager (CRM) built with functionality and user experience in mind. Manage multiple workspaces, deals, companies, contacts, tasks, and meetings all in one place.</p>
-                        <h3>React - TypeScript - Firebase</h3>
+                        <h3>React - Javascript - Firebase</h3>
                     </div>
                 </section>
 
@@ -98,18 +99,18 @@
                 <section class="project-container">
                     <div class="project-left">
                         <picture>
-                            <source media="(max-width: 799px)" srcset="./Images/rippledex.PNG" />
-                            <source media="(min-width: 800px)" srcset="./Images/rippledex.PNG" />
-                            <img src="./Images/rippledex.PNG" alt="Rippledex Thumbnail" />
+                            <source media="(max-width: 799px)" srcset="./Images/battleship.PNG" />
+                            <source media="(min-width: 800px)" srcset="./Images/battleship.PNG" />
+                            <img src="./Images/rippledex.PNG" alt="battleship Thumbnail" />
                         </picture>
                         <div class="project-icons">
-                            <a href="github" >
+                            <a href="https://github.com/DoubleVadd/BattleShip-JS" >
                                 <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                                     <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
                                 Repo
                             </a>
-                            <a href="live" >
+                            <a href="https://doublevadd.github.io/BattleShip-JS/" >
                                 <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                     <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
@@ -120,9 +121,9 @@
                     </div>
                     <hr>
                     <div class="project-right">
-                        <h2>RippleDex</h2>
-                        <p>Project Made Under Capstone Subject ..... Info</p>
-                        <h3>React - TypeScript - Firebase - ChakraUI - Gatsby</h3>
+                        <h2>BattleShip JS</h2>
+                        <p>A simple battleship game developed with vanilla JS HTML and CSS <br> Game is currently designed to be played on Desktop against a simple AI agent <br> </p>
+                        <h3>Javascript - Html - CSS</h3>
                     </div>
                 </section>
 
@@ -131,18 +132,18 @@
                 <section class="project-container">
                     <div class="project-left">
                         <picture>
-                            <source media="(max-width: 799px)" srcset="./Images/placeholder.png" />
-                            <source media="(min-width: 800px)" srcset="./Images/placeholder.png" />
-                            <img src="./Images/placeholder.png" alt="Rippledex Thumbnail" />
+                            <source media="(max-width: 799px)" srcset="./Images/weather.png" />
+                            <source media="(min-width: 800px)" srcset="./Images/weather.png" />
+                            <img src="./Images/weather.PNG" alt="weather Thumbnail" />
                         </picture>
                         <div class="project-icons">
-                            <a href="github" >
+                            <a href="https://doublevadd.github.io/WeatherApp/" >
                                 <svg aria-label="Code Repository" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                                     <path aria-hidden="true" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
                                 Repo
                             </a>
-                            <a href="live" >
+                            <a href="https://doublevadd.github.io/WeatherApp/" >
                                 <svg aria-label="Live Deployment" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path aria-hidden="true" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                     <path aria-hidden="true" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
@@ -154,9 +155,9 @@
                     </div>
                     <hr>
                     <div class="project-right">
-                        <h2>RippleDex</h2>
-                        <p>Project Made Under Capstone Subject ..... Info</p>
-                        <h3>React - TypeScript - Firebase</h3>
+                        <h2>Simple WeatherApp</h2>
+                        <p>A simple weather app with search functionality utilising the Weather API</p>
+                        <h3>JavaScript - Html - Css</h3>
                     </div>
                 </section>
                 <hr>
@@ -303,26 +304,6 @@
     </footer>
 
 
-
-
-
-    <!-- -Intro
-    -about
-        -Experience
-        -Interests
-    -Projects
-     - Rippledex
-     -
-     - [wip] 
-     - [wip]
-    -Contact
-
-
-    Hey!
-
-    Thanks for checking out my site!
-    Little about me, I'm a Full-stack web developer
-    with interests in making fun, creative and interesting sites! -->
 
 
 </body>
