@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
@@ -20,7 +20,7 @@
                 <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
               </svg>
             <br>
-            <p>Night Mode</p>
+            <p><span class="mobile-hidden">Night Mode</span></p>
         </button>
 
     </header>
@@ -29,7 +29,7 @@
         <aside class="navigation-container" role="navigation" aria-label="Page Sections">
             <ul class="navigation-mobile">
                 <li class="active" id="navi-welcome-section"><a href="#welcome-section" id="nav-welcome">Welcome</a><hr></li>
-                <li class="visible" id="navi-about-section"><a href="#about-section" id="nav-about">About</a><hr></li>
+                <li class="visible" id="navi-about-section"><a href="#about-section" id="nav-about"><span>About</span></a><hr></li>
                 <li class="inactive" id="navi-project-section"><a href="#project-section" id="nav-project"><span class="mobile-hidden">Web</span> Projects</a><hr></li>
                 <li class="inactive" id="navi-technology-section"><a href="#technology-section" id="nav-technology">Technology</a><hr></li>
                 <li class="inactive" id="navi-creative-section"><a href="#creative-section" id="nav-creative">Creative <span class="mobile-hidden">Works</span></a><hr></li>
@@ -132,8 +132,8 @@
                 <section class="project-container">
                     <div class="project-left">
                         <picture>
-                            <source media="(max-width: 799px)" srcset="./Images/weather.png" />
-                            <source media="(min-width: 800px)" srcset="./Images/weather.png" />
+                            <source media="(max-width: 799px)" srcset="./Images/weather.PNG" />
+                            <source media="(min-width: 800px)" srcset="./Images/weather.PNG" />
                             <img src="./Images/weather.PNG" alt="weather Thumbnail" />
                         </picture>
                         <div class="project-icons">
@@ -284,7 +284,7 @@
             <section class="contact-section sec-container anchor-padding" id="contact-section">
                 <h1>Contact</h1>
                 <p>You made it to the end! <span>thanks</span> again for checking it out! <br>
-                Contact me with any of the socials below, I'm always happy to chat,<br> be it for <span>work</span>, or anything <span>else</span>!
+                Contact me with any of the socials below, I'm always happy to chat, be it for <span>work</span>, or anything <span>else</span>!
                 <br><br>
                 </p>
                 <div class="skill-container social-container">
